@@ -1,0 +1,20 @@
+[
+    {
+      "name": "Butch",
+      "image": "https://imgur.com/uda7Dyb.png",
+      "intro": "I'm a 15-year barber veteran barber dedicated to making you look and feel good. I strive to give the best service and experience this industry has to offer.",
+      "speciality": "Cutting short to medium hair styles, disconneciton, fades, design, precision bobs, clasic barder techniques. Collaborationg with my guest to find what works for them."
+    },
+    {
+      "name": "Barbara",
+      "image": "https://imgur.com/8YsteZr.png",
+      "intro": "I’m Barbara. I specialize in the art of barbering, haircuts and shaves.",
+      "speciality": "Fades, short cuts, creative cuts, and razor cuts."
+    },
+    {
+        "name": "Mike",
+        "image": "https://imgur.com/bUwwCY9.png",
+        "intro": "Hi, I'm Mike. Cutting hair has been my hobby for ten years. Barbering at this cool yet professional barbershop will heighten my skills, talent, and techniques. Learning is a never-ending experience. What a great atmosphere to do it in!",
+        "speciality": "Short to medium haircuts."
+    }
+  ]

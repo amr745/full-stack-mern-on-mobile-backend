@@ -1,0 +1,18 @@
+[
+    {
+      "cut": "Buzz Cut",
+      "description": "Clipper cut using one guard over the entire head."
+    },
+    {
+      "cut": "Full Service Cut",
+      "description": "Best value for long-layer cuts. Includes desired cut with our signature massage shampoo and full style."
+    },
+    {
+      "cut": "Long Layer Cut",
+      "description": "Longer length (shoulders or below), as well as complex cuts such as bobs and layers, using shears and/or razors. Shampoo and style not included."
+    },
+    {
+      "cut": "Beard Trim",
+      "description": "Faded beard, with a trimmer line up to create a tapered effect."
+    }
+  ]

@@ -2,10 +2,10 @@ const mongoose = require("mongoose");
 // const Schema = mongoose.Schema;
 
 const AppointmentsSchema = new mongoose.Schema({
-  barber: { type: String, required: false },
-  service: { type: String, required: false },
-  date: { type: String, required: false },
-  time: { type: String, required: false },
+  barber: String,
+  service: String,
+  date: String,
+  time: String
 });
 
 const Appointments = mongoose.model("Appointments", AppointmentsSchema)

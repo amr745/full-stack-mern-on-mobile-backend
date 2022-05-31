@@ -47,16 +47,14 @@ app.get("/services", (req, res) => {
 // INDEX ROUTE
 app.get("/appointments", async (req, res) => {
   try {
-    // send all people
     res.json(await Barb.find({}))
   } catch (error) {
-    //send error
     res.status(400).json(error)
   }
 })
 
 // DELETE ROUTE
-app.delete("/apointments/:id", async (req, res) => {
+app.delete("/appointments/:id", async (req, res) => {
     try {
         res.json( await Barb.findByIdAndDelete(req.params.id))
     } catch (error) {

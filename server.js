@@ -23,7 +23,7 @@ app.use(morgan("dev")) // logging
 app.use(express.json()) // parse json bodies
 
 // Import JSON files
-const Barb = require("./models/barb")
+const Appointments = require("./models/AppointmentsSchema")
 const barbers = require("./barbers.json");
 const services = require("./services.json");
 
@@ -47,7 +47,7 @@ app.get("/services", (req, res) => {
 // INDEX ROUTE
 app.get("/appointments", async (req, res) => {
   try {
-    res.json(await Barb.find({}))
+    res.json(await Appointments.find({}))
   } catch (error) {
     res.status(400).json(error)
   }
@@ -56,7 +56,7 @@ app.get("/appointments", async (req, res) => {
 // DELETE ROUTE
 app.delete("/appointments/:id", async (req, res) => {
     try {
-        res.json( await Barb.findByIdAndDelete(req.params.id))
+        res.json( await Appointments.findByIdAndDelete(req.params.id))
     } catch (error) {
         res.status(400).json(error)
     }
@@ -65,7 +65,7 @@ app.delete("/appointments/:id", async (req, res) => {
 // UPDATE ROUTE
 app.put("/appointments/:id", async (req, res) => {
     try {
-        res.json(await Barb.findByIdAndUpdate(req.params.id, req.body, { new: true }))
+        res.json(await Appointments.findByIdAndUpdate(req.params.id, req.body, { new: true }))
     } catch (error) {
         res.status(400).json(error)
     }
@@ -74,8 +74,8 @@ app.put("/appointments/:id", async (req, res) => {
 // CREATE ROUTE
 app.post("/appointments", async (req, res) => {
   try {
-    // send all people
-    res.json(await Barb.create(req.body))
+    // send all appointments
+    res.json(await Appointments.create(req.body))
   } catch (error) {
     //send error
     res.status(400).json(error)
@@ -85,7 +85,7 @@ app.post("/appointments", async (req, res) => {
 // SHOW ROUTE
 app.get("/appointments/:id", async (req, res) => {
     try {
-        res.json(await Barb.findById(req.params.id))
+        res.json(await Appointments.findById(req.params.id))
     } catch (error) {
         res.status(400).json(error)
     }

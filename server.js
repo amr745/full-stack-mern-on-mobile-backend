@@ -26,12 +26,13 @@ app.use(express.json()) // parse json bodies
 const Appointments = require("./models/AppointmentsSchema")
 const barbers = require("./barbers.json");
 const services = require("./services.json");
+const home = require("./home.json");
 
 // ROUTES
 
 // HOME ROUTE
 app.get("/", (req, res) => {
-  res.send("Fresh Cut");
+  res.json(home);
 })
 
 // BARBERS ROUTE
